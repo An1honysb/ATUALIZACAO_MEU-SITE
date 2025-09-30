@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #3a076d 0%, #4b2c82 50%, #0b749e 75%, #2e8b57 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #e2efff;
+}
+
+.barra-navegacao {
+    background: linear-gradient(90deg, #483d8b 60%, #74d69d 100%);
+    padding: 15px 20px;
+    border-bottom: 2px solid #2e8b57;
+    box-shadow: 0 4px 14px rgba(116,214,157, 0.1);
+}
+
+.barra-navegacao ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.barra-navegacao ul li a {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #e0e6ff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: background 0.3s, color 0.2s;
+}
+
+.barra-navegacao ul li a:hover {
+    background: #74d69d;
+    color: #24174b;
+}
+
+.conteudo-principal {
+    flex-grow: 1;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cabecalho-pagina {
+    background: #232353;
+    padding: 24px;
+    border: 2px solid #74d69d;
+    border-radius: 16px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 16px rgba(18,52,86,0.08);
+    color: #caf8f6;
+}
+
+.info-perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 22px;
+    border: 3px solid #74d69d;
+    background: linear-gradient(135deg, #74d69d 40%, #4b2c82 100%);
+    object-fit: cover;
+}
+
+.info-texto-perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-usuario {
+    font-size: 25px;
+    font-weight: bold;
+    color: #59a87d;
+    letter-spacing: 1px;
+}
+
+.nickname-usuario {
+    color: #abb2f9;
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+.btn {
+    border: none;
+    padding: 11px 22px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(90deg, #74d69d, #0b749e);
+    color: #1a1a2e;
+    transition: background 0.3s;
+}
+
+.btn-editar-perfil {
+    margin-left: auto;
+}
+
+.btn:hover {
+    background: #2e8b57;
+    color: #fff;
+}
+
+.form-nova-postagem textarea {
+    width: 100%;
+    height: 80px;
+    border: 2px solid #483d8b;
+    border-radius: 11px;
+    padding: 12px;
+    font-size: 16px;
+    resize: vertical;
+    background: #30357d;
+    color: #e0e6ff;
+}
+
+.form-actions {
+    text-align: right;
+    margin-top: 12px;
+}
+
+.post {
+    background: #2d2f54;
+    border: 2px solid #4b2c82;
+    border-radius: 15px;
+    padding: 22px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 16px rgba(72,44,130,0.07);
+    color: #dbeaf3;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.avatar-post {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #74d69d;
+    object-fit: cover;
+}
+
+.post-info-autor {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-autor {
+    font-weight: bold;
+    color: #74d69d;
+}
+
+.nickname-autor {
+    color: #b9c7ff;
+    font-size: 16px;
+}
+
+.post-content p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #e6edff;
+}
+
+.post-footer {
+    display: flex;
+    gap: 22px;
+    margin-top: 18px;
+    color: #abb2f9;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: #74d69d;
+    transition: color 0.3s;
+}
+
+.post-actions button:hover {
+    color: #2e8b57;
+}
+
+.post-actions label {
+    font-size: 15px;
+    color: #abb2f9;
+}
